@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: $myBlue;
+};
+
+.header__nav{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        @extend %a-nav;
+    };
+
+    .home-nav {
+        font-weight: 700;
+    };
+    
+    .header__active-link {
+        color: $myYellow;
+    };
+};
+
+.header__logout-nav {
+    @extend %a-nav;
+    display: inline-block;
+    cursor: pointer;
+};

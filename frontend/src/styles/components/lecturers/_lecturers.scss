@@ -1,0 +1,118 @@
+.lecturers-page {
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    margin: 4rem auto 0;
+    padding: 9rem 6rem 3rem 9rem;
+    // padding-top: 8rem;
+    // padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    h1 {
+        position: absolute;
+        top: 6rem;
+        left: 6rem;
+        padding: 0.5rem;
+        font-size: larger;
+    };
+};
+
+.lecturers-page__div {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 20rem;
+        background: $myGray;
+        border: 2px solid $myBlue;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
+        margin: 0.5rem;
+
+        h2 {
+            align-self: center;
+        };
+    };    
+
+    button {
+        width: 80%;
+        margin-bottom: 1.5rem;
+        align-self: center;
+    };
+};
+
+.lecturers-student-page {
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 8rem;
+};
+
+.lecturers-student-page__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 20rem;
+    background: $myGray;
+    border: 2px solid $myBlue;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    margin: 0.5rem;
+
+    button {
+        width: 80%;
+        min-width: fit-content;
+        margin-bottom: 1.5rem;
+        align-self: center;
+    };
+
+    h2 {
+        align-self: center;
+        font-size: larger;
+        text-decoration: underline;
+    };
+};
+
+.manage-courses-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        font-size: larger;
+    };
+
+    select {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    };
+
+    span {
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 1.5rem;
+
+        button {
+            width: fit-content;
+        };
+    };
+};
+
+.attendancy-list-item {
+    border-radius: 0.25rem;
+};

@@ -1,0 +1,36 @@
+.course-page {
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+};
+
+.attendancy-list {
+    width: 50%;
+    // min-height: 65vh;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    background: $myGray;
+    border: 2px solid $myBlue;
+    border-radius: 0.5rem;
+
+    h1 {
+        margin-bottom: 25px;
+    };
+};
+
+.attendancy-list__item {
+    padding: 0 15px;
+    margin: 0 15px 15px;
+    border-radius: 0.25rem; 
+       
+    button {
+        position: relative;
+        float: right;
+        margin-top: 15px;
+        border-radius: 5px;
+    };
+};

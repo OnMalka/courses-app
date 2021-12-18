@@ -1,0 +1,94 @@
+.login-page {
+    width: 100%;
+    height: calc(100vh - 4rem);
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+.login-page__form {
+    width: 40%;
+    background: $myGray;
+    border: 2px solid $myBlue;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 1rem;
+};
+
+.login-form {
+    h3 {
+        text-align: center;
+    };
+
+    input {
+        display: block;
+        width: 100%;
+        padding: 0 0.5rem;
+        border: 1px solid $myBlue;
+        margin-top: 1rem;
+
+        &:focus {
+            outline: none;
+        };
+    };
+
+    .input-invalid {
+        border: 1px solid $myRed;
+    };
+
+    span {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: flex-end;
+
+        input {
+            width: 14px;
+            height: 14px;
+        };
+    };
+
+    form {
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;            
+
+            input {
+                width: 1rem;
+                height: 1rem;
+            };
+        };
+    };
+};
+
+.input-invalid {
+    border: 1px solid $myRed;
+};
+
+.invalid-message {
+    color: $myRed;
+    font-size: 0.75rem;
+};
+
+.login-form__nav {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        font-size: 0.75rem;
+        align-self: flex-end;
+        text-decoration: underline;
+        color: $myBlue;
+    };
+};
+
+.error-message {
+    color: $myRed;
+    background: #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+};

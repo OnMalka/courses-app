@@ -1,0 +1,60 @@
+.lecturer-course-page {
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    margin: 4rem auto 0;
+    padding: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;  
+
+    button {
+        align-self: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    };
+
+    select {
+        align-self: center;
+        margin-top: 1rem;
+    };  
+};
+
+.lecturer-course-page__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 20rem;
+    background: $myGray;
+    border: 2px solid $myBlue;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    
+    select {
+        margin-bottom: 1rem;
+    };
+
+     span {
+        // padding: 0.3rem;
+        border-radius: 0.25rem;
+        align-self: center;
+        // margin: 0.3rem;
+        display: flex;
+        align-items: center;        
+        
+        h3 {
+            display: inline-block;
+            margin-right: 1rem;
+            // margin-bottom: 28px;
+        };
+
+        button {
+            font-size: 7px;
+        };
+    };
+
+    h2 {
+        align-self: center;
+    };
+};
